@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C72CACB019AB278E000F6AE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72CACAF19AB278E000F6AE0 /* Cocoa.framework */; };
+		C72CACBA19AB278E000F6AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C72CACB819AB278E000F6AE0 /* InfoPlist.strings */; };
+		C72CACBC19AB278E000F6AE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C72CACBB19AB278E000F6AE0 /* main.m */; };
+		C72CACC019AB278E000F6AE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C72CACBE19AB278E000F6AE0 /* Credits.rtf */; };
+		C72CACC319AB278E000F6AE0 /* ShutEyeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C72CACC219AB278E000F6AE0 /* ShutEyeAppDelegate.m */; };
+		C72CACC619AB278E000F6AE0 /* ShutEyeMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72CACC419AB278E000F6AE0 /* ShutEyeMainMenu.xib */; };
+		C72CACC819AB278E000F6AE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72CACC719AB278E000F6AE0 /* Images.xcassets */; };
+		C72CACD019AB278E000F6AE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72CACAF19AB278E000F6AE0 /* Cocoa.framework */; };
+		C72CACD819AB278E000F6AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C72CACD619AB278E000F6AE0 /* InfoPlist.strings */; };
+		C72CACDA19AB278E000F6AE0 /* ShutEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C72CACD919AB278E000F6AE0 /* ShutEyeTests.m */; };
+		C733EEB519B6775E006F4781 /* ShutEyeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C733EEB419B6775E006F4781 /* ShutEyeWindowController.m */; };
+		C779FA9719BBC66600D0C3F4 /* ShutEyeWindowAbout.xib in Resources */ = {isa = PBXBuildFile; fileRef = C779FA9919BBC66600D0C3F4 /* ShutEyeWindowAbout.xib */; };
+		C7E6A86119B3CAF600CF48D2 /* Icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E6A86019B3CAF600CF48D2 /* Icon1.png */; };
+		C7E6A86319B3CCAE00CF48D2 /* Icon1-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E6A86219B3CCAD00CF48D2 /* Icon1-alt.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C72CACD119AB278E000F6AE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C72CACA419AB278E000F6AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C72CACAB19AB278E000F6AE0;
+			remoteInfo = ShutEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C72CACAC19AB278E000F6AE0 /* ShutEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShutEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72CACAF19AB278E000F6AE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C72CACB219AB278E000F6AE0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C72CACB319AB278E000F6AE0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C72CACB419AB278E000F6AE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C72CACB719AB278E000F6AE0 /* ShutEye-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShutEye-Info.plist"; sourceTree = "<group>"; };
+		C72CACB919AB278E000F6AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C72CACBB19AB278E000F6AE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C72CACBD19AB278E000F6AE0 /* ShutEye-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShutEye-Prefix.pch"; sourceTree = "<group>"; };
+		C72CACBF19AB278E000F6AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C72CACC119AB278E000F6AE0 /* ShutEyeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShutEyeAppDelegate.h; sourceTree = "<group>"; };
+		C72CACC219AB278E000F6AE0 /* ShutEyeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShutEyeAppDelegate.m; sourceTree = "<group>"; };
+		C72CACC519AB278E000F6AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShutEyeMainMenu.xib; sourceTree = "<group>"; };
+		C72CACC719AB278E000F6AE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C72CACCD19AB278E000F6AE0 /* ShutEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShutEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72CACD519AB278E000F6AE0 /* ShutEyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShutEyeTests-Info.plist"; sourceTree = "<group>"; };
+		C72CACD719AB278E000F6AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C72CACD919AB278E000F6AE0 /* ShutEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShutEyeTests.m; sourceTree = "<group>"; };
+		C733EEB319B6775E006F4781 /* ShutEyeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShutEyeWindowController.h; sourceTree = "<group>"; };
+		C733EEB419B6775E006F4781 /* ShutEyeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShutEyeWindowController.m; sourceTree = "<group>"; };
+		C779FA9819BBC66600D0C3F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShutEyeWindowAbout.xib; sourceTree = "<group>"; };
+		C7E6A86019B3CAF600CF48D2 /* Icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon1.png; sourceTree = "<group>"; };
+		C7E6A86219B3CCAD00CF48D2 /* Icon1-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon1-alt.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C72CACA919AB278E000F6AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72CACB019AB278E000F6AE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72CACCA19AB278E000F6AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72CACD019AB278E000F6AE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C72CACA319AB278E000F6AE0 = {
+			isa = PBXGroup;
+			children = (
+				C72CACB519AB278E000F6AE0 /* ShutEye */,
+				C72CACD319AB278E000F6AE0 /* ShutEyeTests */,
+				C72CACAE19AB278E000F6AE0 /* Frameworks */,
+				C72CACAD19AB278E000F6AE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C72CACAD19AB278E000F6AE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C72CACAC19AB278E000F6AE0 /* ShutEye.app */,
+				C72CACCD19AB278E000F6AE0 /* ShutEyeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C72CACAE19AB278E000F6AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C72CACAF19AB278E000F6AE0 /* Cocoa.framework */,
+				C72CACB119AB278E000F6AE0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C72CACB119AB278E000F6AE0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C72CACB219AB278E000F6AE0 /* AppKit.framework */,
+				C72CACB319AB278E000F6AE0 /* CoreData.framework */,
+				C72CACB419AB278E000F6AE0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C72CACB519AB278E000F6AE0 /* ShutEye */ = {
+			isa = PBXGroup;
+			children = (
+				C779FA9919BBC66600D0C3F4 /* ShutEyeWindowAbout.xib */,
+				C733EEB319B6775E006F4781 /* ShutEyeWindowController.h */,
+				C733EEB419B6775E006F4781 /* ShutEyeWindowController.m */,
+				C72CACC119AB278E000F6AE0 /* ShutEyeAppDelegate.h */,
+				C72CACC219AB278E000F6AE0 /* ShutEyeAppDelegate.m */,
+				C72CACC419AB278E000F6AE0 /* ShutEyeMainMenu.xib */,
+				C72CACC719AB278E000F6AE0 /* Images.xcassets */,
+				C72CACB619AB278E000F6AE0 /* Supporting Files */,
+			);
+			path = ShutEye;
+			sourceTree = "<group>";
+		};
+		C72CACB619AB278E000F6AE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E6A86219B3CCAD00CF48D2 /* Icon1-alt.png */,
+				C7E6A86019B3CAF600CF48D2 /* Icon1.png */,
+				C72CACB719AB278E000F6AE0 /* ShutEye-Info.plist */,
+				C72CACB819AB278E000F6AE0 /* InfoPlist.strings */,
+				C72CACBB19AB278E000F6AE0 /* main.m */,
+				C72CACBD19AB278E000F6AE0 /* ShutEye-Prefix.pch */,
+				C72CACBE19AB278E000F6AE0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C72CACD319AB278E000F6AE0 /* ShutEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C72CACD919AB278E000F6AE0 /* ShutEyeTests.m */,
+				C72CACD419AB278E000F6AE0 /* Supporting Files */,
+			);
+			path = ShutEyeTests;
+			sourceTree = "<group>";
+		};
+		C72CACD419AB278E000F6AE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C72CACD519AB278E000F6AE0 /* ShutEyeTests-Info.plist */,
+				C72CACD619AB278E000F6AE0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C72CACAB19AB278E000F6AE0 /* ShutEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C72CACDD19AB278E000F6AE0 /* Build configuration list for PBXNativeTarget "ShutEye" */;
+			buildPhases = (
+				C72CACA819AB278E000F6AE0 /* Sources */,
+				C72CACA919AB278E000F6AE0 /* Frameworks */,
+				C72CACAA19AB278E000F6AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShutEye;
+			productName = ShutEye;
+			productReference = C72CACAC19AB278E000F6AE0 /* ShutEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C72CACCC19AB278E000F6AE0 /* ShutEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C72CACE019AB278E000F6AE0 /* Build configuration list for PBXNativeTarget "ShutEyeTests" */;
+			buildPhases = (
+				C72CACC919AB278E000F6AE0 /* Sources */,
+				C72CACCA19AB278E000F6AE0 /* Frameworks */,
+				C72CACCB19AB278E000F6AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C72CACD219AB278E000F6AE0 /* PBXTargetDependency */,
+			);
+			name = ShutEyeTests;
+			productName = ShutEyeTests;
+			productReference = C72CACCD19AB278E000F6AE0 /* ShutEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C72CACA419AB278E000F6AE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ShutEye;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = DougBarry;
+				TargetAttributes = {
+					C72CACCC19AB278E000F6AE0 = {
+						TestTargetID = C72CACAB19AB278E000F6AE0;
+					};
+				};
+			};
+			buildConfigurationList = C72CACA719AB278E000F6AE0 /* Build configuration list for PBXProject "ShutEye" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C72CACA319AB278E000F6AE0;
+			productRefGroup = C72CACAD19AB278E000F6AE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C72CACAB19AB278E000F6AE0 /* ShutEye */,
+				C72CACCC19AB278E000F6AE0 /* ShutEyeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C72CACAA19AB278E000F6AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E6A86319B3CCAE00CF48D2 /* Icon1-alt.png in Resources */,
+				C7E6A86119B3CAF600CF48D2 /* Icon1.png in Resources */,
+				C72CACBA19AB278E000F6AE0 /* InfoPlist.strings in Resources */,
+				C72CACC819AB278E000F6AE0 /* Images.xcassets in Resources */,
+				C72CACC019AB278E000F6AE0 /* Credits.rtf in Resources */,
+				C72CACC619AB278E000F6AE0 /* ShutEyeMainMenu.xib in Resources */,
+				C779FA9719BBC66600D0C3F4 /* ShutEyeWindowAbout.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72CACCB19AB278E000F6AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72CACD819AB278E000F6AE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C72CACA819AB278E000F6AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72CACBC19AB278E000F6AE0 /* main.m in Sources */,
+				C72CACC319AB278E000F6AE0 /* ShutEyeAppDelegate.m in Sources */,
+				C733EEB519B6775E006F4781 /* ShutEyeWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72CACC919AB278E000F6AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72CACDA19AB278E000F6AE0 /* ShutEyeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C72CACD219AB278E000F6AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C72CACAB19AB278E000F6AE0 /* ShutEye */;
+			targetProxy = C72CACD119AB278E000F6AE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C72CACB819AB278E000F6AE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C72CACB919AB278E000F6AE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C72CACBE19AB278E000F6AE0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C72CACBF19AB278E000F6AE0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C72CACC419AB278E000F6AE0 /* ShutEyeMainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C72CACC519AB278E000F6AE0 /* Base */,
+			);
+			name = ShutEyeMainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C72CACD619AB278E000F6AE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C72CACD719AB278E000F6AE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C779FA9919BBC66600D0C3F4 /* ShutEyeWindowAbout.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C779FA9819BBC66600D0C3F4 /* en */,
+			);
+			name = ShutEyeWindowAbout.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C72CACDB19AB278E000F6AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C72CACDC19AB278E000F6AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C72CACDE19AB278E000F6AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShutEye/ShutEye-Prefix.pch";
+				INFOPLIST_FILE = "ShutEye/ShutEye-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C72CACDF19AB278E000F6AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShutEye/ShutEye-Prefix.pch";
+				INFOPLIST_FILE = "ShutEye/ShutEye-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C72CACE119AB278E000F6AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShutEye.app/Contents/MacOS/ShutEye";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShutEye/ShutEye-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShutEyeTests/ShutEyeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C72CACE219AB278E000F6AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShutEye.app/Contents/MacOS/ShutEye";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShutEye/ShutEye-Prefix.pch";
+				INFOPLIST_FILE = "ShutEyeTests/ShutEyeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C72CACA719AB278E000F6AE0 /* Build configuration list for PBXProject "ShutEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72CACDB19AB278E000F6AE0 /* Debug */,
+				C72CACDC19AB278E000F6AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C72CACDD19AB278E000F6AE0 /* Build configuration list for PBXNativeTarget "ShutEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72CACDE19AB278E000F6AE0 /* Debug */,
+				C72CACDF19AB278E000F6AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C72CACE019AB278E000F6AE0 /* Build configuration list for PBXNativeTarget "ShutEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72CACE119AB278E000F6AE0 /* Debug */,
+				C72CACE219AB278E000F6AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C72CACA419AB278E000F6AE0 /* Project object */;
+}
