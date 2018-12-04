@@ -275,10 +275,17 @@ bool shutEyeEnabled = false;
 -(void)systemSleepNow
 {
     NSLog(@"System sleep requested");
-    NSAppleScript *sleepForce = nil;
-    sleepForce = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to sleep"];
-    [sleepForce executeAndReturnError:nil];
-    sleepForce = nil;
+
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath:@"/usr/bin/pmset"];
+    [task setArguments:@[@"sleepnow"]];
+    [task launch];
+    task = nil;
+    
+//    NSAppleScript *sleepForce = nil;
+//    sleepForce = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to sleep"];
+//    [sleepForce executeAndReturnError:nil];
+//    sleepForce = nil;
 }
 
 -(void)enableShutEye
