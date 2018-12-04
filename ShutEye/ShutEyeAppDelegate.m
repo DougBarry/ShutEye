@@ -70,8 +70,8 @@ bool shutEyeEnabled = false;
     
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     statusItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setImage:[NSImage imageNamed:@"Icon1.png"]];
-    [statusItem setAlternateImage:[NSImage imageNamed:@"Icon1-alt.png"]];
+    [statusItem setImage:[NSImage imageNamed:(@"MenuBarIcon")]];
+    [statusItem setAlternateImage:[NSImage imageNamed:(@"MenuBarIcon")]];
     [statusItem setHighlightMode:YES];
     [statusItem setMenu:theMenu];
 
