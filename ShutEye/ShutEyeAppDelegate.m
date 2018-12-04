@@ -1,10 +1,10 @@
 //
 //  ShutEyeAppDelegate.m
-//  ShutEye V0.2
+//  ShutEye V0.3
 //
 //  Copyright (c) Douglas Barry 2014-2018
 //  First version 20140825.
-//  Last update 20180412.
+//  Last update 20181204.
 //
 
 #import "ShutEyeAppDelegate.h"
@@ -70,8 +70,8 @@ bool shutEyeEnabled = false;
     
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     statusItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setImage:[NSImage imageNamed:@"Icon1.png"]];
-    [statusItem setAlternateImage:[NSImage imageNamed:@"Icon1-alt.png"]];
+    [statusItem setImage:[NSImage imageNamed:(@"MenuBarIcon")]];
+    [statusItem setAlternateImage:[NSImage imageNamed:(@"MenuBarIcon")]];
     [statusItem setHighlightMode:YES];
     [statusItem setMenu:theMenu];
 
@@ -275,10 +275,17 @@ bool shutEyeEnabled = false;
 -(void)systemSleepNow
 {
     NSLog(@"System sleep requested");
-    NSAppleScript *sleepForce = nil;
-    sleepForce = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to sleep"];
-    [sleepForce executeAndReturnError:nil];
-    sleepForce = nil;
+
+    NSTask *task = [[NSTask alloc] init];
+    [task setLaunchPath:@"/usr/bin/pmset"];
+    [task setArguments:@[@"sleepnow"]];
+    [task launch];
+    task = nil;
+    
+//    NSAppleScript *sleepForce = nil;
+//    sleepForce = [[NSAppleScript alloc] initWithSource:@"tell application \"System Events\" to sleep"];
+//    [sleepForce executeAndReturnError:nil];
+//    sleepForce = nil;
 }
 
 -(void)enableShutEye
