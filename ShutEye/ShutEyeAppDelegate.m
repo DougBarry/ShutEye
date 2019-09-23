@@ -7,6 +7,12 @@
 //  Last update 20181204.
 //
 
+//#include <CoreAudio/CoreAudio.h>
+//#include <CoreFoundation/CoreFoundation.h>
+//#include <stdio.h>
+//
+//#import <AudioToolbox/AudioServices.h>
+//#import <Foundation/NSObject.h>
 #import "ShutEyeAppDelegate.h"
 #import "ShutEyeWindowController.h"
 
@@ -25,6 +31,9 @@ bool shutEyeEnabled = false;
 #define CUSTOM_TIME_MIN 30
 #define CUSTOM_TIME_MAX (3600*48)
 #define WAKETIMER_INTERVAL 5
+
+// Reduce audio volume over the last x seconds gently..
+#define AUDIO_DIMMER_TIMESPAN = 60
 
 #define DISABLE_ABOUTWINDOW
 
@@ -263,7 +272,111 @@ bool shutEyeEnabled = false;
         [statusItem setTitle:NULL];
     }
 }
-     
+
+#if 1==1
++(AudioDeviceID)getDefaultOutputDeviceID
+{
+    AudioDeviceID   outputDeviceID = kAudioObjectUnknown;
+    
+    // get output device device
+    UInt32 propertySize = 0;
+    OSStatus status = noErr;
+    AudioObjectPropertyAddress propertyAOPA;
+    propertyAOPA.mScope = kAudioObjectPropertyScopeGlobal;
+    propertyAOPA.mElement = kAudioObjectPropertyElementMaster;
+    propertyAOPA.mSelector = kAudioHardwarePropertyDefaultOutputDevice;
+    
+    if (!AudioHardwareServiceHasProperty(kAudioObjectSystemObject, &propertyAOPA))
+    {
+        NSLog(@"Cannot find default output device!");
+        return outputDeviceID;
+    }
+    
+    propertySize = sizeof(AudioDeviceID);
+    
+    status = AudioHardwareServiceGetPropertyData(kAudioObjectSystemObject, &propertyAOPA, 0, NULL, &propertySize, &outputDeviceID);
+    
+    if(status)
+    {
+        NSLog(@"Cannot find default output device!");
+    }
+    return outputDeviceID;
+}
+#endif
+
+-(void)setSystemVolumeLevel:(float)volumeLevel
+{
+    
+}
+
+-(float)getSystemVolumeLevel
+{
+    AudioObjectPropertyAddress propertyAddress = {
+        kAudioHardwarePropertyDefaultOutputDevice,
+        kAudioObjectPropertyScopeGlobal,
+        kAudioObjectPropertyElementMaster
+    };
+    
+    AudioDeviceID deviceID;
+    UInt32 dataSize = sizeof(deviceID);
+    OSStatus result = AudioObjectGetPropertyData(kAudioObjectSystemObject, &propertyAddress, 0, NULL, &dataSize, &deviceID);
+    
+    if(kAudioHardwareNoError != result)
+        // Handle the error
+
+    if(!AudioHardwareServiceHasProperty(deviceID, &propertyAddress))
+        // An error occurred
+        
+        Float32 volume;
+    UInt32 dataSize = sizeof(volume);
+    OSStatus result = AudioHardwareServiceGetPropertyData(deviceID, &propertyAddress, 0, NULL, &dataSize, &volume);
+    
+    if(kAudioHardwareNoError != result)
+        // An error occurred
+        
+#if 1==1
+// getting system volume
+    Float32         outputVolume;
+    
+    UInt32 propertySize = 0;
+    OSStatus status = noErr;
+    AudioObjectPropertyAddress propertyAOPA;
+    propertyAOPA.mElement = kAudioObjectPropertyElementMaster;
+    propertyAOPA.mSelector = kAudioHardwareServiceDeviceProperty_VirtualMasterVolume;
+    propertyAOPA.mScope = kAudioDevicePropertyScopeOutput;
+    
+    AudioDeviceID outputDeviceID = [[self class] getDefaultOutputDeviceID];
+    
+    if (outputDeviceID == kAudioObjectUnknown)
+    {
+        NSLog(@"Unknown device");
+        return 0.0;
+    }
+    
+    if (!AudioHardwareServiceHasProperty(outputDeviceID, &propertyAOPA))
+    {
+        NSLog(@"No volume returned for device 0x%0x", outputDeviceID);
+        return 0.0;
+    }
+    
+    propertySize = sizeof(Float32);
+    
+    status = AudioHardwareServiceGetPropertyData(outputDeviceID, &propertyAOPA, 0, NULL, &propertySize, &outputVolume);
+    
+    if (status)
+    {
+        NSLog(@"No volume returned for device 0x%0x", outputDeviceID);
+        return 0.0;
+    }
+    
+    if ((outputVolume < 0.0) || (outputVolume > 1.0)) return 0.0;
+
+    return outputVolume;
+    
+#endif
+}
+
+
 -(void)shutEyeGotoSleep
 {
     NSLog(@"Start sleep process");
